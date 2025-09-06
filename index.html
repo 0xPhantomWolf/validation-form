@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>FutureTech Institute</h1>
+    <p>
+      FutureTech is a leading institute committed to academic excellence and
+      innovation. Join us to shape your future with quality education.
+    </p>
+  </header>
+
+  <main>
+    <form class="card">
+      <h2>Student Admission Form</h2>
+
+      <!-- Personal -->
+      <section>
+        <h3>Personal Details</h3>
+        <label>First Name* <input type="text" required></label>
+        <label>Last Name* <input type="text" required></label>
+        <label>Date of Birth* <input type="date" required></label>
+        <label>Gender*
+          <select required>
+            <option value="">Select</option>
+            <option>Male</option><option>Female</option><option>Other</option>
+          </select>
+        </label>
+      </section>
+
+      <!-- Contact -->
+      <section>
+        <h3>Contact Details</h3>
+        <label>Email* <input type="email" required></label>
+        <label>Phone* <input type="tel" required></label>
+        <label>Address* <textarea required></textarea></label>
+      </section>
+
+      <!-- Education -->
+      <section>
+        <h3>Educational Details</h3>
+        <label>Last Qualification*
+          <select required>
+            <option value="">Select</option>
+            <option>Matric</option><option>Intermediate</option>
+            <option>Bachelor</option><option>Master</option>
+          </select>
+        </label>
+        <label>Passing Year* <input type="number" min="2000" max="2025" required></label>
+      </section>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+  </main>
+  <Script src="script.js"></Script>
+</body>
+</html>
